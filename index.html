@@ -4,8 +4,11 @@
 		<title>My Test Endpoint</title>
 	</head>
   <script>
+    console.log('begin script');	  
     if(window.location.search.startsWith('redirectUrl=')){
+      console.log('redirectUrl found');
       const redirectUrl = window.location.search.slice(window.location.search.indexOf('=') + 1);
+	 console.log('redirectUrl =',redirectUrl);
       window.location.replace(redirectUrl);
     }
   </script>
