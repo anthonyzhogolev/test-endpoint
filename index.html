@@ -5,11 +5,11 @@
 	</head>
   <script>
     console.log('begin script');	  
-    if(window.location.search.startsWith('redirectUrl=')){
+    if(window.location.search.includes('redirectUrl=')){
       console.log('redirectUrl found');
-      const redirectUrl = window.location.search.slice(window.location.search.indexOf('=') + 1);
+      const redirectUrl = window.location.search.slice(window.location.search.indexOf('redirectUrl=') + 1);
 	 console.log('redirectUrl =',redirectUrl);
-      window.location.replace(redirectUrl);
+      window.location.replace(redirectUrl+"?hid=123");
     }
   </script>
 	<body>
