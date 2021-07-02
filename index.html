@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My Test Endpoint</title>
+	</head>
+  <script>
+    if(window.location.search.startsWith('redirectUrl=')){
+      const redirectUrl = window.location.search.slice(window.location.search.indexOf('=') + 1);
+      window.location.replace(redirectUrl);
+    }
+  </script>
+	<body>
+ 
+		<div class="container">
+    		<div class="blurb">
+        		<h1>This is test Endpoint</h1>
+				<p>add `redirectUrl` to redirect</a></p>
+    		</div><!-- /.blurb -->
+		</div><!-- /.container -->
+		<footer>
+    		<ul>        		
+        		<li><a href="https://github.com/anthonyzhogolev">https://github.com/anthonyzhogolev</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
